@@ -6,7 +6,6 @@
     <title>Class 11-B</title>
 </head>
 <body>
-    <img src="img/img1.png">
     <div id="a1">
         <p>Джадвали дарси</p>
         <p>Джадвали навбатдорон</p>
@@ -14,20 +13,23 @@
     </div>
     <style>
         body{
+            background-image: url(img/img1.png);
             background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
         }
         #a1{
             color: #ffffff;
-            display: flexbox;
+            display: inline;
             align-items: center;
             justify-content: center;
         }
         #a1 p{
             font-size: 22px;
             text-align: center;
-            padding: 30px;
-            position: relative;
-            top: 230px;
+            padding: 15px;
+            width: 250px;
+            border: 2px solid #ffffff;
         }
     </style>
 </body>
