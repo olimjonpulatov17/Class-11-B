@@ -7,9 +7,9 @@
 </head>
 <body>
     <div id="a1">
-        <a href="a1.html">Ҷадвали дарсӣ</a>
-        <a href="b1.html">Ҷадвали навбатдорон</a>
-        <a href="#">Ҷадвали хонандагон</a>
+        <a href="a1.html" id="animated-text">Ҷадвали дарсӣ</a>
+        <a href="b1.html" id="animated-text">Ҷадвали навбатдорон</a>
+        <a href="c1.html" id="animated-text">Ҷадвали хонандагон</a>
     </div>
     <style>
         body{
@@ -40,6 +40,24 @@
             justify-content: center;
             margin: 20px;
         }
+        #animated-text {
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
     </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("animated-text").style.animationPlayState = "running"; // Запуск анимации при загрузке страницы
+    });
+    </script>
 </body>
 </html>
