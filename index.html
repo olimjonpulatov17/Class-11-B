@@ -6,13 +6,24 @@
     <title>Class 11-B</title>
 </head>
 <body>
-    <a href="a1.html">Ҷадвали дарсӣ</a>
-    <a href="#">Ҷадвали навбатдорон</a>
-    <a href="#">Ҷадвали хонандагон</a>
+    <div id="a1">
+        <a href="a1.html">Ҷадвали дарсӣ</a>
+        <a href="#">Ҷадвали навбатдорон</a>
+        <a href="#">Ҷадвали хонандагон</a>
+    </div>
     <style>
         body{
             background: url(img/img1.png);
             background-size: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #a1{
+            position: absolute;
+            top: 30%;
+            left: 15%;
+            padding: 0;
+            margin: 0;
         }
         a{
             font-size: 18px;
@@ -28,9 +39,6 @@
             align-items: center;
             justify-content: center;
             margin: 20px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
         }
     </style>
 </body>
