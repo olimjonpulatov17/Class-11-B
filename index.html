@@ -38,7 +38,18 @@
             justify-content: center;
             margin: 25px;
         }
-        
+        #animated-text{
+            opacity: 0;
+            animation: fadeIn 1.5s forwards;
+        }
+        @keyframes fadeIn{
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
         @media only screen and (max-width: 350px){
             
         }
