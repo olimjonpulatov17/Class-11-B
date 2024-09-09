@@ -7,9 +7,9 @@
 </head>
 <body>
     <div id="a1">
-        <a href="a1.html" id="animated-text">Ҷадвали дарсӣ</a>
-        <a href="b1.html" id="animated-text">Ҷадвали навбатдорон</a>
-        <a href="c1.html" id="animated-text">Ҷадвали хонандагон</a>
+        <a href="a1.html" id="animatedText">Ҷадвали дарсӣ</a>
+        <a href="b1.html" id="animatedText">Ҷадвали навбатдорон</a>
+        <a href="c1.html" id="animatedText">Ҷадвали хонандагон</a>
     </div>
     <style>
         body{
@@ -20,8 +20,8 @@
             justify-content: center;
         }
         #a1{
-            position: absolute;
-            top: 30%;
+            text-align: center;
+            padding-top: 50px;
         }
         a{
             font-size: 20px;
@@ -38,26 +38,19 @@
             justify-content: center;
             margin: 25px;
         }
-        #animated-text{
+        #animatedText{
             opacity: 0;
-            animation: fadeIn 1s forwards;
-        }
-        @keyframes fadeIn{
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
+            transition: transform 1s, opacity 1s;
         }
         @media only screen and (max-width: 350px){
             
         }
     </style>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-        document.getElementById("animated-text").style.animationPlayState = "running";
-        });
+        const text = document.getElementById('animatedText');
+        text.style.transform = 'translateX(100%)';
+        text.style.opacity = '1';
+        text.style.transition = 'transform 1s, opacity 1s';
     </script>
 </body>
 </html>
