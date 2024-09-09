@@ -7,82 +7,52 @@
 </head>
 <body>
     <div id="a1">
-        <a href="b2.html">Душанбе</a>
-        <a href="b3.html">Сешанбе</a>
-        <a href="b4.html">Чоршанбе </a>
-        <a href="b5.html">Панҷшанбе</a>
-        <a href="b6.html">Ҷумъа</a>
-        <a href="b7.html">Шанбе</a>
-    </div>
-    <div id="a2">
-        <a href="index.html">Ба қафо</a>
+        <a href="a2.html" id="animated-text">Душанбе</a>
+        <a href="a3.html" id="animated-text">Сешанбе</a>
+        <a href="a4.html" id="animated-text">Чоршанбе </a>
+        <a href="a5.html" id="animated-text">Панҷшанбе</a>
+        <a href="a6.html" id="animated-text">Ҷумъа</a>
+        <a href="a7.html" id="animated-text">Шанбе</a>
+        <a href="index.html" id="animated-text">Ба қафо</a>
     </div>
     <style>
         body{
             background: url(img/img1.png);
             background-size: 100%;
-            display: inline;
+            display: flex;
             align-items: center;
             justify-content: center;
         }
         #a1{
             position: absolute;
-            top: 15%;
-            left: 18%;
-            padding: 0;
-            margin: 0;
-        }
-        #a2{
-            position: absolute;
-            top: 60%;
-            left: 18%;
-            padding: 0;
-            margin: 0;
-        }
-        p{
-            font-size: 18px;
-            text-align: center;
-            padding: 8px;
-            width: 200px;
-            border: 2px solid #ffffff;
-            color: #ffffff;
-            backdrop-filter: blur(6px);
-            border-radius: 12px;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 20px;
+            top: 13%;
         }
         a{
-            font-size: 18px;
+            font-size: 20px;
             text-align: center;
-            padding: 8px;
-            width: 200px;
+            padding: 10px;
+            width: 230px;
             border: 2px solid #ffffff;
             color: #ffffff;
-            backdrop-filter: blur(6px);
-            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
             text-decoration: none;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 20px;
+            margin: 25px;
         }
-        p{
-            font-size: 18px;
-            text-align: center;
-            padding: 8px;
-            width: 200px;
-            border: 2px solid #ffffff;
-            color: #ffffff;
-            backdrop-filter: blur(6px);
-            border-radius: 12px;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 20px;
+        #animated-text{
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+        @keyframes fadeIn{
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
     </style>
 </body>

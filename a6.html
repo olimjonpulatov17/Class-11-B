@@ -7,82 +7,67 @@
 </head>
 <body>
     <div id="a1">
-        <p>?</p>
-        <p>?</p>
-        <p>?</p>
-        <p>?</p>
-        <p>?</p>
-        <p>?</p>
-    </div>
-    <div id="a2">
-        <a href="a1.html">Ба қафо</a>
+        <p id="animated-text">?</p>
+        <p id="animated-text">?</p>
+        <p id="animated-text">?</p>
+        <p id="animated-text">?</p>
+        <p id="animated-text">?</p>
+        <p id="animated-text">?</p>
+        <a href="a1.html" id="animated-text">Ба қафо</a>
     </div>
     <style>
-        body{
+       body{
             background: url(img/img1.png);
             background-size: 100%;
-            display: inline;
+            display: flex;
             align-items: center;
             justify-content: center;
         }
         #a1{
             position: absolute;
-            top: 15%;
-            left: 18%;
-            padding: 0;
-            margin: 0;
-        }
-        #a2{
-            position: absolute;
-            top: 60%;
-            left: 18%;
-            padding: 0;
-            margin: 0;
+            top: 13%;
         }
         p{
-            font-size: 18px;
+            font-size: 20px;
             text-align: center;
-            padding: 8px;
-            width: 200px;
+            padding: 10px;
+            width: 230px;
             border: 2px solid #ffffff;
             color: #ffffff;
-            backdrop-filter: blur(6px);
-            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
             text-decoration: none;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 20px;
+            margin: 25px;
         }
         a{
-            font-size: 18px;
+            font-size: 20px;
             text-align: center;
-            padding: 8px;
-            width: 200px;
+            padding: 10px;
+            width: 230px;
             border: 2px solid #ffffff;
             color: #ffffff;
-            backdrop-filter: blur(6px);
-            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
             text-decoration: none;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 20px;
+            margin: 25px;
         }
-        p{
-            font-size: 18px;
-            text-align: center;
-            padding: 8px;
-            width: 200px;
-            border: 2px solid #ffffff;
-            color: #ffffff;
-            backdrop-filter: blur(6px);
-            border-radius: 12px;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 20px;
+        #animated-text{
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+        @keyframes fadeIn{
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
     </style>
 </body>
