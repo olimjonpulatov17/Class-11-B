@@ -6,6 +6,11 @@
     <title>Class 11-B</title>
 </head>
 <body>
+    <div class="lantern"></div>
+    <div class="lantern"></div>
+    <div class="lantern"></div>
+    <div class="lantern"></div>
+    
     <div id="a1">
         <a href="a1.html" id="animated-text">Ҷадвали дарсӣ</a>
         <a href="b1.html" id="animated-text">Ҷадвали навбатдорон</a>
@@ -13,13 +18,105 @@
         <a href="http://wa.me/+992920400721" id="animated-text">Creator: O.P</a>
     </div>
     <style>
-        body{
-            background: url(img/img1.png);
-            background-size: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+ body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  background-color: black;
+}
+
+lantern {
+  height: 150px;
+  width: 100px;
+  background: rgb(255, 7, 7);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  animation: up 50s infinite;
+  box-shadow: 1px 1px 50px 10px red;
+  border-radius: 20px;
+}
+
+.lantern::after {
+  content: "";
+  opacity: 80%;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  position: absolute;
+  background: rgb(255, 132, 0);
+  animation: light 5s infinite;
+}
+
+@keyframes light {
+  0%, 100% {
+    box-shadow: 1px 1px 20px 10px rgb(255, 132, 0);
+  }
+  50% {
+    box-shadow: 1px 1px 20px 15px rgb(255, 132, 0);
+  }
+}
+
+@keyframes up {
+  0%, 100% {
+    transform: translateY(0vh);
+  }
+  50% {
+    transform: translateY(-120vh);
+  }
+  90% {
+    transform: translateY(0px);
+  }
+}
+
+.lantern:nth-child(2){
+  animation: up 40s infinite;
+  background-color: rgb(60, 255, 0);
+  box-shadow: 1px 1px 50px 10px rgb(60, 255, 0);
+}
+.lantern:nth-child(3){
+  animation: up 55s infinite;
+  background-color: rgb(0, 8, 255);
+  box-shadow: 1px 1px 50px 10px rgb(0, 8, 255);
+}
+ .lantern:nth-child(4){
+  animation: up 45s infinite;
+  background-color: rgb(183, 0, 255);
+  box-shadow: 1px 1px 50px 10px rgb(183, 0, 255);
+}   
+ .lantern:nth-child(5){
+  animation: up 40s infinite;
+  background-color: rgb(30, 63, 136);
+  box-shadow: 1px 1px 50px 10px rgb(30, 63, 136);
+}   
+   
+@media (max-width: 650px){
+  .lantern:nth-child(5){
+    display: none;
+  }
+}
+
+ @media (max-width: 500px){
+  .lantern:nth-child(4){
+    display: none;
+  }
+}   
+  
+  @media (max-width: 300px){
+  .lantern:nth-child(3){
+    display: none;
+  }
+}
+
+@media (max-width: 200px){
+  .lantern:nth-child(2){
+    display: none;
+  }
+}
         #a1{
             position: absolute;
             top: 28%;
@@ -52,27 +149,6 @@
             }
             to {
                 opacity: 1;
-            }
-        }
-        @media only screen and (max-width: 400px){
-            #a1{
-                position: absolute;
-                top: 15%;
-            }
-            a{
-                font-size: 16px;
-                text-align: center;
-                padding: 8px;
-                width: 200px;
-                border: 2px solid #ffffff;
-                color: #ffffff;
-                backdrop-filter: blur(4px);
-                border-radius: 20px;
-                text-decoration: none;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin: 20px;
             }
         }
     </style>
