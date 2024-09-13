@@ -7,6 +7,18 @@
     <title>Class 11-B</title>
 </head>
 <body>
+    <b>
+        <span>С</span>
+        <span>И</span>
+        <span>Н</span>
+        <span>Ф</span>
+        <span>И</span>
+        <span>-</span>
+        <span>1</span>
+        <span>1</span>
+        <span>-</span>
+        <span>"Б"</span>
+    </b>
     <div id="a1">
         <a href="a1.html" id="animated-text">Ҷадвали дарсӣ</a>
         <a href="b1.html" id="animated-text">Ҷадвали навбатдорон</a>
@@ -15,11 +27,26 @@
     </div>
     <style>
         body{
-            background: linear-gradient(90deg, black, red);
-            background-size: 100vh;
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
+            background-color: #353535;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            user-select: none;
+        }
+        span{
+            position: relative;
+            top: 50px;
+            font-size: 25px;
+            letter-spacing: 7px;
+            text-shadow: 0 0 10px #3C6E71;
+            transition: 3s ;
+            cursor: pointer;
+        }
+        span:hover{
+            transition: 0.1s ease;
+            color: #8aeff8;
+            text-shadow: 0 0 20px #8aeff8;
         }
         #a1{
             position: absolute;
