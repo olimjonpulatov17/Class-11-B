@@ -7,81 +7,102 @@
     <title>A1</title>
 </head>
 <body>
+    <div class="waviy">
+        <span style="--i:1">С</span>
+        <span style="--i:2">И</span>
+        <span style="--i:3">Н</span>
+        <span style="--i:4">Ф</span>
+        <span style="--i:5">И</span>
+        <span style="--i:6">-</span>
+        <span style="--i:7">1</span>
+        <span style="--i:8">1</span>
+        <span style="--i:9">-</span>
+        <span style="--i:10">"Б"</span>
+    </div>
     <div id="a1">
-        <p id="animated-text">Абдуғаниева Дурдона</p>
-        <p id="animated-text">Абдуҷалилов Азимҷон</p>
-        <p id="animated-text">Абдуҷалилов Фазлиддин</p>
-        <p id="animated-text">Абдуллоев Шохрух</p>
-        <p id="animated-text">Арипова Мехрангиз</p>
-        <p id="animated-text">Ахмедов Ахрор</p>
-        <p id="animated-text">Ахмедова Шахзода</p>
-        <p id="animated-text">Бобоназарзода Нигора</p>
-        <p id="animated-text">Бойбоева Мехрангиз</p>
-        <p id="animated-text">Ғаниева Динара</p>
-        <p id="animated-text">Ғоибова Комила</p>
-        <p id="animated-text">Мирғолибов Руслан</p>
-        <p id="animated-text">Муминова Диёра</p>
-        <p id="animated-text">Ортиқова Сабина</p>
-        <p id="animated-text">Оқилова Манижа</p>
-        <p id="animated-text">Пулатов Олимҷон</p>
-        <p id="animated-text">Расулова Сабрина</p>
-        <p id="animated-text">Сатторова Ҷасмин</p>
-        <p id="animated-text">Самадова Ҷасмина</p>
-        <p id="animated-text">Таниқулов Аброр</p>
-        <p id="animated-text">Тошбобоев Шохрух</p>
-        <p id="animated-text">Турдиева Мавзуна</p>
-        <p id="animated-text">Ҳошимова Нозанин</p>
+        <p>Абдуғаниева Дурдона</p>
+        <p>Абдуҷалилов Азимҷон</p>
+        <p>Абдуҷалилов Фазлиддин</p>
+        <p>Абдуллоев Шохрух</p>
+        <p>Арипова Мехрангиз</p>
+        <p>Ахмедов Ахрор</p>
+        <p>Ахмедова Шахзода</p>
+        <p>Бобоназарзода Нигора</p>
+        <p>Бойбоева Мехрангиз</p>
+        <p>Ғаниева Динара</p>
+        <p>Ғоибова Комила</p>
+        <p>Мирғолибов Руслан</p>
+        <p>Муминова Диёра</p>
+        <p>Ортиқова Сабина</p>
+        <p>Оқилова Манижа</p>
+        <p>Пулатов Олимҷон</p>
+        <p>Расулова Сабрина</p>
+        <p>Сатторова Ҷасмин</p>
+        <p>Самадова Ҷасмина</p>
+        <p>Таниқулов Аброр</p>
+        <p>Тошбобоев Шохрух</p>
+        <p>Турдиева Мавзуна</p>
+        <p>Ҳошимова Нозанин</p>
         <a href="index.html" id="animated-text">Ба қафо</a>
     </div>
     <style>
        body{
-        background: linear-gradient(90deg, black, red);
-            background-size: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            background: #303030;
+            margin-top: 25%;
         }
-        p{
-            font-size: 20px;
-            text-align: center;
-            padding: 7px;
-            width: 260px;
-            border: 2px solid #ffffff;
-            color: #ffffff;
-            backdrop-filter: blur(4px);
-            border-radius: 20px;
-            text-decoration: none;
+        .waviy{
+            position: relative;
+            -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+            font-size: 40px;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 15px;
+            }
+        .waviy span{
+            position: relative;
+            display: inline-block;
+            color: #fff;
+            text-transform: uppercase;
+            animation: waviy 2s infinite;
+            animation-delay: calc(.2s * var(--i));
+            margin: 3px;
+        }
+        @keyframes waviy{
+            0%,40%,100%{
+                transform: translateY(0)
+            }
+            20%{
+                transform: translateY(-20px)
+            }
         }
         a{
-            font-size: 20px;
-            text-align: center;
-            padding: 7px;
-            width: 260px;
-            border: 2px solid #ffffff;
-            color: #ffffff;
-            backdrop-filter: blur(4px);
-            border-radius: 20px;
-            text-decoration: none;
+            --😀: #644dff;
+            --😀😀: #4836bb;
+            --😀😀😀: #654dff63;
+            cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
+            width: 300px;
+            height: 50px;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 15px;
+            margin: 50px;
+            font-size: 22px;
+            font-weight: 900;
+            text-decoration: none;
+            color: #fff;
+            background: var(--😀);
+            border: 2px solid var(--😀😀);
+            border-radius: .75rem;
+            box-shadow: 0 8px 0 var(--😀😀);
+            transform: skew(-10deg);
+            transition: all .1s ease;
+            filter: drop-shadow(0 15px 20px var(--😀😀😀));
         }
-        #animated-text{
-            opacity: 0;
-            animation: fadeIn 1.5s forwards;
-        }
-        @keyframes fadeIn{
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
+        a:active{
+            letter-spacing: 0px;
+            transform: skew(-10deg) translateY(8px);
+            box-shadow: 0 0 0 var(--😀😀😀);
         }
     </style>
 </body>
