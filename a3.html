@@ -19,6 +19,15 @@
         <span style="--i:9">-</span>
         <span style="--i:10">"Б"</span>
     </div>
+    <div class="waviy">
+        <span style="--i:1">С</span>
+        <span style="--i:2">Е</span>
+        <span style="--i:3">Ш</span>
+        <span style="--i:4">А</span>
+        <span style="--i:5">Н</span>
+        <span style="--i:6">Б</span>
+        <span style="--i:7">Е</span>
+    </div>
     <div id="a1">
         <p id="animated-text">Технологияи иттилотӣ</p>
         <p id="animated-text">Таърихи ҳалқи тоҷик</p>
@@ -31,7 +40,7 @@
     <style>
        body{
             background: #303030;
-            margin-top: 25%;
+            margin-top: 10%;
         }
         .waviy{
             position: relative;
@@ -40,6 +49,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            margin-bottom: 20px;
             }
         .waviy span{
             position: relative;
@@ -49,6 +59,9 @@
             animation: waviy 2s infinite;
             animation-delay: calc(.2s * var(--i));
             margin: 3px;
+        }
+        #a1{
+            margin-top: 35px;
         }
         p{
             color: #fff;
