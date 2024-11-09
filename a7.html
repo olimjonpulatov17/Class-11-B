@@ -19,6 +19,13 @@
         <span style="--i:9">-</span>
         <span style="--i:10">"Б"</span>
     </div>
+    <div class="waviyy">
+        <span style="--i:1">Ш</span>
+        <span style="--i:2">А</span>
+        <span style="--i:3">Н</span>
+        <span style="--i:4">Б</span>
+        <span style="--i:5">Е</span>
+    </div>
     <div id="a1">
         <p id="animated-text">Забони Русӣ</p>
         <p id="animated-text">География</p>
@@ -42,6 +49,23 @@
             justify-content: center;
             }
         .waviy span{
+            position: relative;
+            display: inline-block;
+            color: #fff;
+            text-transform: uppercase;
+            animation: waviy 2s infinite;
+            animation-delay: calc(.2s * var(--i));
+            margin: 3px;
+        }
+        .waviyy{
+            position: relative;
+            -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+            font-size: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            }
+        .waviyy span{
             position: relative;
             display: inline-block;
             color: #fff;
